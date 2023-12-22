@@ -19,7 +19,9 @@ jobs:
         node-version: 14
 
     - name: Install dependencies
-      run: npm install --force
+      run: |
+        npm install --force
+        npm install --save-dev @babel/plugin-proposal-private-property-in-object --force
 
     - name: Build project
       run: npm run build
