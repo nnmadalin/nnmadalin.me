@@ -1,13 +1,16 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body, #root{
+  width: 100%;
+  height: 100%;
+  background: hsla(271, 47%, 9%, 1);
+  background: linear-gradient(270deg, hsla(271, 47%, 9%, 1) 0%, hsla(204, 22%, 5%, 1) 100%);
+  background: -moz-linear-gradient(270deg, hsla(271, 47%, 9%, 1) 0%, hsla(204, 22%, 5%, 1) 100%);
+  background: -webkit-linear-gradient(270deg, hsla(271, 47%, 9%, 1) 0%, hsla(204, 22%, 5%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#170C21", endColorstr="#090C0E", GradientType=1 );
+
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 }

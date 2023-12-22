@@ -1,0 +1,31 @@
+nav{
+  width: calc(100% - 200px);
+  padding: 30px 100px;
+  backdrop-filter: blur(8px);
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  color: white;
+}
+nav h2{
+  font-size: 25px;
+  cursor: pointer;
+}
+nav .components{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+nav .components a{
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav .components a:hover{
+  color: rgb(0, 170, 255);
+}
