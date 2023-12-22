@@ -1,37 +1,30 @@
-name: 🚀 Deploy on push master
+name: Deploy to FTP
 
-on: 
+on:
   push:
-    branches:    
-      - master 
+    branches:
+      - master
 
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
-    
-    strategy:
-      matrix:
-        node-version: [16.x]
-    
+
     steps:
-    - name: 🚚 Get latest code
+    - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@master
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 14
 
-    - name: 🔨 Build Project 
-      run: |
-        npm install
-        npm run build
-    
-    - name: List output files
-      run: find build/ -print
+    - name: Install dependencies
+      run: npm install
 
-    - name: 📂 Sync files
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ${{ secrets.SERVER }}
