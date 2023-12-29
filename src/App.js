@@ -4,7 +4,8 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import AboutMe from './Components/AboutMe';
 import Portofolio from './Components/Portofolio';
-import Footer from './Components/Portofolio';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <AboutMe />
       <Portofolio />
+      <Contact />
       <Footer />
     </>
   );

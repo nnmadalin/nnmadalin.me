@@ -1,16 +1,38 @@
 *{
   margin: 0;
   padding: 0;
+  transition: all 1s;
+  
 }
-
-html, body, #root{
+html{
+  scroll-behavior: smooth;
+}
+html, body{
   width: 100%;
   height: 100%;
-  background: hsla(271, 47%, 9%, 1);
-  background: linear-gradient(270deg, hsla(271, 47%, 9%, 1) 0%, hsla(204, 22%, 5%, 1) 100%);
-  background: -moz-linear-gradient(270deg, hsla(271, 47%, 9%, 1) 0%, hsla(204, 22%, 5%, 1) 100%);
-  background: -webkit-linear-gradient(270deg, hsla(271, 47%, 9%, 1) 0%, hsla(204, 22%, 5%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#170C21", endColorstr="#090C0E", GradientType=1 );
-
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+#root{
+  width: 100%;
+  min-height: 100%;
+  background: hsla(270, 67%, 94%, 1);
+  background: linear-gradient(-90deg, hsla(270, 67%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  background: -moz-linear-gradient(-90deg, hsla(270, 67%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  background: -webkit-linear-gradient(-90deg, hsla(270, 67%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F0E6FA", endColorstr="#FFFFFF", GradientType=1 );
+}
+
+*::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+  
 }
