@@ -33,6 +33,15 @@ function AboutMe() {
                         </div>
                      </li>
 
+                     <li>
+                        <div className="content">
+                           <p>🥉 <b>4h place</b> - ProSoft@NT National Contest, Web Section</p>
+                        </div>
+                        <div className="time">
+                           <h4>The year 2024</h4>
+                        </div>
+                     </li>
+
                      
                   </ul>
                </div>

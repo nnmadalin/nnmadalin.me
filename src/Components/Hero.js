@@ -71,7 +71,7 @@ function Hero() {
                      <FaClock /> {(new Date(dateNow)).getHours() + ":" + (new Date(dateNow)).getMinutes() + ":"  + (new Date(dateNow)).getSeconds()}
                   </div>
                   <div className="date bigCard">
-                     <BsCalendar2Date /> {(new Date(dateNow)).getDate() + "." + (new Date(dateNow)).getMonth() + "."  + (new Date(dateNow)).getFullYear()}
+                     <BsCalendar2Date /> {(new Date(dateNow)).getDate() + "." + ((new Date(dateNow)).getMonth() + 1) + "."  + (new Date(dateNow)).getFullYear()}
                   </div>
                   <div className="country bigCard">
                      <span className="blue">RO</span>

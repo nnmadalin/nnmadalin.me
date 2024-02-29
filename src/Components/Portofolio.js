@@ -11,6 +11,7 @@ import jboi from '../assets/Images/JBOI - 2022.png';
 import weather from '../assets/Images/Weather.png';
 import ifab from '../assets/Images/ifab.png';
 import spaceExplorer from '../assets/Images/spaceExplorer.png';
+import truecheck from '../assets/Images/TrueCheck.png';
 
 
 function Portofolio() {
@@ -19,10 +20,38 @@ function Portofolio() {
          <div className="portofolio" id="portofolio">
             <div className="content">
                <h2>Portofolio</h2>
-               
-               <div className="card right">
+
+               <div className="card left TrueCheck">
                   <div className="image">
-                     <img src={dragisbuchi} alt="img" loading="lazy" draggable="false"/>
+                     <img src={truecheck} alt="img"  draggable="false"/>
+                  </div>
+                  <div className="description">
+                     <h3>TrueCheck</h3>
+                     <p className="projectDescription">
+                     The TrueCheck web platform helps people by detecting potentially malicious sites (phishing, hidden malware, propaganda, etc.), 
+                     but also by analyzing the content with the help of artificial intelligence. With the help of the technologies used, we can minimize the risk of fake news!
+                     </p>
+                     
+                     <div className="madeWith">
+                        <span>NextJS</span>
+                        <span>Tailwindcss</span>
+                        <span>Gemini AI</span>
+                     </div>
+
+                     <div className="action">
+                        <a href="https://github.com/nnmadalin/true-check" target="_blank">
+                           Code <FiGithub />
+                        </a>
+                        <a href="https://truecheck.nnmadalin.me/" target="_blank">
+                           Website <FiCheckCircle />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               
+               <div className="card right DragosBuchi">
+                  <div className="image">
+                     <img src={dragisbuchi} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>Dragoș Buchi's website</h3>
@@ -46,9 +75,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card left">
+               <div className="card left Sepi">
                   <div className="image">
-                     <img src={sepi} alt="img" loading="lazy" draggable="false"/>
+                     <img src={sepi} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>SEPI</h3>
@@ -72,9 +101,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card right">
+               <div className="card right Jboi">
                   <div className="image">
-                     <img src={jboi} alt="img" loading="lazy" draggable="false"/>
+                     <img src={jboi} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>JBOI 2022</h3>
@@ -102,9 +131,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card left">
+               <div className="card left NED">
                   <div className="image">
-                     <img src={ned} alt="img" loading="lazy" draggable="false"/>
+                     <img src={ned} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>NED - North East Dynamics</h3>
@@ -129,9 +158,9 @@ function Portofolio() {
                   </div>
                </div>
                
-               <div className="card right">
+               <div className="card right SchoolSync">
                   <div className="image">
-                     <img src={schoolsync} alt="img" loading="lazy" draggable="false"/>
+                     <img src={schoolsync} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>SchoolSync</h3>
@@ -160,9 +189,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card left">
+               <div className="card left AMPR">
                   <div className="image">
-                  <img src={ampr} alt="img" loading="lazy" draggable="false"/>
+                  <img src={ampr} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>AMPR - Weather alerts for Romania</h3>
@@ -178,7 +207,7 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://api.nnmadalin.me/ampr" target="_blank">
+                        <a href="https://api.nnmadalin.me/ampr/" target="_blank">
                            API <FiCompass />
                         </a>
 
@@ -193,9 +222,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card right">
+               <div className="card right Weather">
                   <div className="image">
-                     <img src={weather} alt="img" loading="lazy" draggable="false"/>
+                     <img src={weather} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>Weather app</h3>
@@ -220,9 +249,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card left">
+               <div className="card left Lightning">
                   <div className="image">
-                     <img src={lightning} alt="img" loading="lazy" draggable="false"/>
+                     <img src={lightning} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>Lightning detection application</h3>
@@ -248,9 +277,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card right">
+               <div className="card right AQIP">
                   <div className="image">
-                     <img src={aqip} alt="img" loading="lazy" draggable="false"/>
+                     <img src={aqip} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>AQIP - Air Quality in Ploiesti</h3>
@@ -278,9 +307,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card left">
+               <div className="card left InviteForaBreak">
                   <div className="image">
-                     <img src={ifab} alt="img" loading="lazy" draggable="false"/>
+                     <img src={ifab} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>Invite for a break - ITMarathon</h3>
@@ -302,9 +331,9 @@ function Portofolio() {
                   </div>
                </div>
 
-               <div className="card right">
+               <div className="card right Space Explorer">
                   <div className="image">
-                     <img src={spaceExplorer} alt="img" loading="lazy" draggable="false"/>
+                     <img src={spaceExplorer} alt="img"  draggable="false"/>
                   </div>
                   <div className="description">
                      <h3>Space Explorer - PROSOFT@NT</h3>
