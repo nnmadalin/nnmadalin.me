@@ -36,6 +36,7 @@ function AboutMe() {
                      <li>
                         <div className="content">
                            <p>🥉 <b>4h place</b> - ProSoft@NT National Contest, Web Section</p>
+                           <p>🚀 <b>2nd place</b> - Cyber Security Olympiad, County Stage</p>
                         </div>
                         <div className="time">
                            <h4>The year 2024</h4>
