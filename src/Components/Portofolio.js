@@ -13,6 +13,7 @@ import ifab from '../assets/Images/ifab.png';
 import spaceExplorer from '../assets/Images/spaceExplorer.png';
 import truecheck from '../assets/Images/TrueCheck.png';
 import newperspectiveofart from '../assets/Images/newperspectiveofart.ro.jpg';
+import halloffame from '../assets/Images/halloffame.jpg';
 
 function Portofolio() {
    return (
@@ -20,6 +21,32 @@ function Portofolio() {
          <div className="portofolio" id="portofolio">
             <div className="content">
                <h2>Portofolio</h2>
+
+               <div className="card left HallOfFame">
+                  <div className="image">
+                     <img src={halloffame} alt="img"  draggable="false"/>
+                  </div>
+                  <div className="description">
+                     <h3>Hall of Fame - Informatics</h3>
+                     <p className="projectDescription">
+                        Hall of Fame - Informatics (National computer science batches and Romania's participation in international computer science competitions.)
+                        <br />
+                        This historical present is the realization of an old desire of ours: that of putting together the existing information about the activity 
+                        carried out over the years in the field of the Olympics.
+                     </p>
+                     
+                     <div className="madeWith">
+                        <span>NextJS</span>
+                        <span>Tailwindcss</span>
+                     </div>
+
+                     <div className="action">
+                        <a href="https://hall-of-fame.sepi.ro/" target="_blank" rel="noreferrer">
+                           Website <FiCheckCircle />
+                        </a>
+                     </div>
+                  </div>
+               </div>
 
                <div className="card right NewPerspectiveOfArt">
                   <div className="image">
@@ -69,9 +96,6 @@ function Portofolio() {
                      <div className="action">
                         <a href="https://github.com/nnmadalin/true-check" target="_blank" rel="noreferrer">
                            Code <FiGithub />
-                        </a>
-                        <a href="https://truecheck.nnmadalin.me/" target="_blank" rel="noreferrer">
-                           Website <FiCheckCircle />
                         </a>
                      </div>
                   </div>
@@ -326,10 +350,6 @@ function Portofolio() {
                      <div className="action">
                         <a href="https://github.com/nnmadalin/Code-Envision" target="_blank" rel="noreferrer">
                            Code <FiGithub />
-                        </a>
-
-                        <a href="https://aqip.nnmadalin.me/" target="_blank" rel="noreferrer">
-                           Website <FiCheckCircle />
                         </a>
                      </div>
                   </div>
