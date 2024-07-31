@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./Main.css";
 
 import Navbar from './Components/Navbar';

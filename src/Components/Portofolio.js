@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FiCheckCircle , FiGithub, FiCompass } from "react-icons/fi";
 
 import ampr from '../assets/Images/Ampr.png';

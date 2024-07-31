@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FiInstagram, FiGithub, FiMail} from "react-icons/fi";
 
 function Navbar() {
@@ -8,9 +10,9 @@ function Navbar() {
          </div>
 
          <div className="components">
-            <a href="https://www.instagram.com/nnmadalin" target="_blank"><FiInstagram /></a>
-            <a href="https://github.com/nnmadalin" target="_blank"><FiGithub /></a>
-            <a href="mailto:neauna.madalin2006@gmail.com" target="_blank"><FiMail /></a>
+            <a href="https://www.instagram.com/nnmadalin" target="_blank" rel="noreferrer"><FiInstagram /></a>
+            <a href="https://github.com/nnmadalin" target="_blank"  rel="noreferrer"><FiGithub /></a>
+            <a href="mailto:neauna.madalin2006@gmail.com" target="_blank"  rel="noreferrer"><FiMail /></a>
          </div>
       </nav>
    );

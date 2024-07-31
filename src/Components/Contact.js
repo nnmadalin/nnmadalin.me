@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FiInstagram, FiGithub, FiMail} from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa6";
 

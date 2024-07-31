@@ -1,7 +1,9 @@
+import React from "react";
+
 import { useEffect, useState } from "react";
 
-import { FiInstagram, FiGithub, FiMail, FiFigma} from "react-icons/fi";
-import { PiFigmaLogoDuotone, PiStudentFill } from "react-icons/pi";
+import { FiFigma } from "react-icons/fi";
+import { PiStudentFill } from "react-icons/pi";
 import { SiReact } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
@@ -29,13 +31,13 @@ function Hero() {
                <h1>👋🏻<span>Hi, I'm Mădălin</span></h1>
                <br /> <br />
                <p>
-                  Hello, my name is <b>Neauna Madalin</b>, and I am a young computer enthusiast. I am originally from Botosani, Romania, and I am 
+                  Hello, my name is <b>Neauna Madalin</b>, and I am a young computer enthusiast. I am originally from Botosani, Romania, and I am
                   currently a student at <b>Regina Maria High School in Dorohoi</b>.
                </p>
                <br />
                <p>
-                  Behind the keyboard, I discover the fascinating <b>world of code</b> and <b>technology</b>. I like to explore the secrets of 
-                  algorithms and get involved in everything related to tech, from <b>local competitions</b> to <b>personal projects</b> that develop 
+                  Behind the keyboard, I discover the fascinating <b>world of code</b> and <b>technology</b>. I like to explore the secrets of
+                  algorithms and get involved in everything related to tech, from <b>local competitions</b> to <b>personal projects</b> that develop
                   my skills.
                </p>
                <br />
@@ -45,14 +47,14 @@ function Hero() {
             </div>
             <div className="foto">
                <div className="cardMe">
-                  <img src={MadalinFoto} draggable="false" />
+                  <img src={MadalinFoto} draggable="false" alt="" />
                   <div className="description">
                      <h2>Neaună Mădălin</h2>
                      <h4>Botoșani, Romania</h4>
                   </div>
 
                   <div className="iconReact smallCard">
-                     <SiReact /> 
+                     <SiReact />
                   </div>
                   <div className="iconCPP smallCard">
                      <TbBrandCpp />
@@ -68,10 +70,13 @@ function Hero() {
                   </div>
 
                   <div className="clock bigCard">
-                     <FaClock /> {(new Date(dateNow)).getHours() + ":" + (new Date(dateNow)).getMinutes() + ":"  + (new Date(dateNow)).getSeconds()}
-                  </div>
+                     <FaClock /> {String((new Date(dateNow)).getHours()).padStart(2, '0') + ":" +
+                        String((new Date(dateNow)).getMinutes()).padStart(2, '0') + ":" +
+                        String((new Date(dateNow)).getSeconds()).padStart(2, '0')}                  </div>
                   <div className="date bigCard">
-                     <BsCalendar2Date /> {(new Date(dateNow)).getDate() + "." + ((new Date(dateNow)).getMonth() + 1) + "."  + (new Date(dateNow)).getFullYear()}
+                  <BsCalendar2Date /> {String((new Date(dateNow)).getDate()).padStart(2, '0') + "." + 
+                     String((new Date(dateNow)).getMonth() + 1).padStart(2, '0') + "." + 
+                     (new Date(dateNow)).getFullYear()}
                   </div>
                   <div className="country bigCard">
                      <span className="blue">RO</span>
@@ -87,7 +92,7 @@ function Hero() {
                   </div>
                </div>
 
-               </div>
+            </div>
          </div>
       </>
    );
