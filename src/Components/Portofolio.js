@@ -12,7 +12,7 @@ import weather from '../assets/Images/Weather.png';
 import ifab from '../assets/Images/ifab.png';
 import spaceExplorer from '../assets/Images/spaceExplorer.png';
 import truecheck from '../assets/Images/TrueCheck.png';
-
+import newperspectiveofart from '../assets/Images/newperspectiveofart.ro.jpg';
 
 function Portofolio() {
    return (
@@ -20,6 +20,34 @@ function Portofolio() {
          <div className="portofolio" id="portofolio">
             <div className="content">
                <h2>Portofolio</h2>
+
+               <div className="card right NewPerspectiveOfArt">
+                  <div className="image">
+                     <img src={newperspectiveofart} alt="img"  draggable="false"/>
+                  </div>
+                  <div className="description">
+                     <h3>New Perspective Of Art</h3>
+                     <p className="projectDescription">
+                        Together we make your moments of joy remain intact over time! We take care to capture every smile and emotion with a click and give them to you 
+                        as unforgettable memories.
+                        <br />
+                        We are with you and your loved ones to frame the image that reproduces the feelings experienced, with the promise that you can preserve them 
+                        through a photo or a clip.
+                     </p>
+                     
+                     <div className="madeWith">
+                        <span>NextJS</span>
+                        <span>Tailwindcss</span>
+                     </div>
+
+                     <div className="action">
+                        <a href="https://www.newperspectiveofart.ro/" target="_blank" rel="noreferrer">
+                           Website <FiCheckCircle />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               
 
                <div className="card left TrueCheck">
                   <div className="image">
@@ -39,10 +67,10 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/true-check" target="_blank">
+                        <a href="https://github.com/nnmadalin/true-check" target="_blank" rel="noreferrer">
                            Code <FiGithub />
                         </a>
-                        <a href="https://truecheck.nnmadalin.me/" target="_blank">
+                        <a href="https://truecheck.nnmadalin.me/" target="_blank" rel="noreferrer">
                            Website <FiCheckCircle />
                         </a>
                      </div>
@@ -68,7 +96,7 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://dragosbuchi.ro/" target="_blank">
+                        <a href="https://dragosbuchi.ro/" target="_blank" rel="noreferrer">
                            Website <FiCheckCircle />
                         </a>
                      </div>
@@ -94,7 +122,7 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://sepi.ro/" target="_blank">
+                        <a href="https://sepi.ro/" target="_blank" rel="noreferrer">
                            Website <FiCheckCircle />
                         </a>
                      </div>
@@ -120,11 +148,11 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/JBOI-2022" target="_blank">
+                        <a href="https://github.com/nnmadalin/JBOI-2022" target="_blank"  rel="noreferrer">
                            Code <FiGithub />
                         </a>
 
-                        <a href="https://jboi2022.lrmd.ro/" target="_blank">
+                        <a href="https://jboi2022.lrmd.ro/" target="_blank" rel="noreferrer">
                         Website <FiCheckCircle />
                         </a>
                      </div>
@@ -147,11 +175,11 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/northeastdynamics" target="_blank">
+                        <a href="https://github.com/nnmadalin/northeastdynamics" target="_blank"  rel="noreferrer">
                            Code <FiGithub />
                         </a>
 
-                        <a href="https://www.northeastdynamics.ro/" target="_blank">
+                        <a href="https://www.northeastdynamics.ro/" target="_blank" rel="noreferrer">
                         Website <FiCheckCircle />
                         </a>
                      </div>
@@ -178,11 +206,11 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/SchoolSync" target="_blank">
+                        <a href="https://github.com/nnmadalin/SchoolSync" target="_blank" rel="noreferrer">
                            Code <FiGithub />
                         </a>
 
-                        <a href="https://schoolsync.nnmadalin.me/" target="_blank">
+                        <a href="https://schoolsync.nnmadalin.me/" target="_blank" rel="noreferrer">
                         Website <FiCheckCircle />
                         </a>
                      </div>
@@ -207,15 +235,15 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://api.nnmadalin.me/ampr/" target="_blank">
+                        <a href="https://api.nnmadalin.me/ampr/" target="_blank" rel="noreferrer">
                            API <FiCompass />
                         </a>
 
-                        <a href="https://github.com/nnmadalin/real_time_alerts_ro" target="_blank">
+                        <a href="https://github.com/nnmadalin/real_time_alerts_ro" target="_blank" rel="noreferrer">
                            Code <FiGithub />
                         </a>
 
-                        <a href="https://ampr.nnmadalin.me/" target="_blank">
+                        <a href="https://ampr.nnmadalin.me/" target="_blank" rel="noreferrer">
                            Website <FiCheckCircle />
                         </a>
                      </div>
@@ -238,11 +266,11 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/weather_app" target="_blank">
+                        <a href="https://github.com/nnmadalin/weather_app" target="_blank" rel="noreferrer">
                            Code <FiGithub />
                         </a>
 
-                        <a href="https://weather.nnmadalin.me/" target="_blank">
+                        <a href="https://weather.nnmadalin.me/" target="_blank" rel="noreferrer">
                            Website <FiCheckCircle />
                         </a>
                      </div>
@@ -266,11 +294,11 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/lightning_app" target="_blank">
+                        <a href="https://github.com/nnmadalin/lightning_app" target="_blank" rel="noreferrer">
                            Code <FiGithub />
                         </a>
 
-                        <a href="https://lightning.nnmadalin.me/" target="_blank">
+                        <a href="https://lightning.nnmadalin.me/" target="_blank" rel="noreferrer">
                            Website <FiCheckCircle />
                         </a>
                      </div>
@@ -296,11 +324,11 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/Code-Envision" target="_blank">
+                        <a href="https://github.com/nnmadalin/Code-Envision" target="_blank" rel="noreferrer">
                            Code <FiGithub />
                         </a>
 
-                        <a href="https://aqip.nnmadalin.me/" target="_blank">
+                        <a href="https://aqip.nnmadalin.me/" target="_blank" rel="noreferrer">
                            Website <FiCheckCircle />
                         </a>
                      </div>
@@ -324,7 +352,7 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/Invite-for-a-break---ITMarathon" target="_blank">
+                        <a href="https://github.com/nnmadalin/Invite-for-a-break---ITMarathon" target="_blank" rel="noreferrer">
                            Code <FiGithub />
                         </a>
                      </div>
@@ -349,7 +377,7 @@ function Portofolio() {
                      </div>
 
                      <div className="action">
-                        <a href="https://github.com/nnmadalin/PROSOFT-NT---Exploratorul-Spatiului" target="_blank">
+                        <a href="https://github.com/nnmadalin/PROSOFT-NT---Exploratorul-Spatiului" target="_blank" rel="noreferrer">
                            Code <FiGithub />
                         </a>
                      </div>
